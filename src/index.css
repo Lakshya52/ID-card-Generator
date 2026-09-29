@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+/* Font files live in "src/fonts/" and are bundled by Vite, so the paths are
+   relative to this file. The family names match the internal name tables
+   ("BeaufortforLOL-Bold" and "CIA Code 39 Medium Text"). */
+@font-face {
+  font-family: "BeaufortforLOL-Bold";
+  src: url("./fonts/BeaufortforLOL-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "CIA Code 39 Medium Text";
+  src: url("./fonts/CIACode39MediumText.ttf") format("truetype");
+  font-weight: 400;
+  font-display: block;
+}
+
+@theme {
+  --font-arial-black: "Arial Black";
+  --font-arial-bold: Arial;
+  --font-beaufort-bold: "BeaufortforLOL-Bold", "Arial Black", Arial, sans-serif;
+  --font-cia-code-39: "CIA Code 39 Medium Text", "Courier New", monospace;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  background-color: #020617;
+  margin: 0;
+}
